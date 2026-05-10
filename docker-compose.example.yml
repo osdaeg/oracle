@@ -1,0 +1,24 @@
+services:
+  oracle:
+    build: .
+    container_name: oracle
+    restart: unless-stopped
+    ports:
+      - "${ORACLE_EXTERNAL_PORT:-7998}:8000"
+    environment:
+      GEMINI_API_KEY:   "${GEMINI_API_KEY}"
+      STABLE_HORDE_KEY: "${STABLE_HORDE_KEY:-0000000000}"
+    volumes:
+      - /ruta/a/tu/data:/app/data
+    networks:
+      - TuRed
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+
+volumes:
+  oracle-data:
+
+networks:
+  TuRed:
+    external: true

@@ -1,0 +1,8 @@
+.env
+docker-compose.yml
+*.log
+data/
+prompt.txt
+README.md.github
+
+README.md.codeberg
