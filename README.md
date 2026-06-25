@@ -2,7 +2,7 @@
 
 Microservicio de IA autoalojado en Docker. Actúa como gateway centralizado para consultas a modelos de inteligencia artificial. Cualquier contenedor de la red puede enviarle un prompt y recibir una respuesta estructurada en JSON, sin necesidad de tener la API key ni conocer los modelos disponibles.
 
-> Oracle es la columna vertebral de [Butler API](https://codeberg.org/osdaeg/butler) y otros servicios del homelab.
+> Oracle es la columna vertebral de [Butler API](https://github.com/osdaeg/butler) y otros servicios del homelab.
 
 ## Características
 
